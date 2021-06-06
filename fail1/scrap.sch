@@ -1,0 +1,383 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BD139 Q?
+U 1 1 600CFD15
+P 2825 3150
+AR Path="/600CFD15" Ref="Q?"  Part="1" 
+AR Path="/5FCF741F/600CFD15" Ref="Q?"  Part="1" 
+F 0 "Q?" H 3017 3196 50  0000 L CNN
+F 1 "BD139" H 3017 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 3025 3075 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf" H 2825 3150 50  0001 L CNN
+	1    2825 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BD140 Q?
+U 1 1 600CFD1B
+P 2825 1750
+AR Path="/600CFD1B" Ref="Q?"  Part="1" 
+AR Path="/5FCF741F/600CFD1B" Ref="Q?"  Part="1" 
+F 0 "Q?" H 3017 1704 50  0000 L CNN
+F 1 "BD140" H 3017 1795 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 3025 1675 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf" H 2825 1750 50  0001 L CNN
+	1    2825 1750
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 600CFD21
+P 2250 1950
+AR Path="/600CFD21" Ref="Q?"  Part="1" 
+AR Path="/5FCF741F/600CFD21" Ref="Q?"  Part="1" 
+F 0 "Q?" H 2441 1996 50  0000 L CNN
+F 1 "MMBT3904" H 2441 1905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 1875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 2250 1950 50  0001 L CNN
+	1    2250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 600CFD27
+P 2250 2950
+AR Path="/600CFD27" Ref="Q?"  Part="1" 
+AR Path="/5FCF741F/600CFD27" Ref="Q?"  Part="1" 
+F 0 "Q?" H 2441 2904 50  0000 L CNN
+F 1 "MMBT3906" H 2441 2995 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 2875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 2250 2950 50  0001 L CNN
+	1    2250 2950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2350 1750 2625 1750
+Wire Wire Line
+	2350 3150 2625 3150
+$Comp
+L Diode:LL4148 D?
+U 1 1 600CFD2F
+P 1800 2100
+AR Path="/600CFD2F" Ref="D?"  Part="1" 
+AR Path="/5FCF741F/600CFD2F" Ref="D?"  Part="1" 
+F 0 "D?" V 1846 2020 50  0000 R CNN
+F 1 "LL4148" V 1755 2020 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1800 1925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 1800 2100 50  0001 C CNN
+	1    1800 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:LL4148 D?
+U 1 1 600CFD35
+P 1800 2800
+AR Path="/600CFD35" Ref="D?"  Part="1" 
+AR Path="/5FCF741F/600CFD35" Ref="D?"  Part="1" 
+F 0 "D?" V 1846 2720 50  0000 R CNN
+F 1 "LL4148" V 1755 2720 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1800 2625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 1800 2800 50  0001 C CNN
+	1    1800 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 1950 1800 1950
+Wire Wire Line
+	2050 2950 1800 2950
+Wire Wire Line
+	2350 2150 2925 2150
+Wire Wire Line
+	2925 2150 2925 1950
+Wire Wire Line
+	2925 2750 2350 2750
+$Comp
+L Device:R R?
+U 1 1 600CFD40
+P 2350 1600
+AR Path="/600CFD40" Ref="R?"  Part="1" 
+AR Path="/5FCF741F/600CFD40" Ref="R?"  Part="1" 
+F 0 "R?" H 2420 1646 50  0000 L CNN
+F 1 "270" H 2420 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 1600 50  0001 C CNN
+F 3 "~" H 2350 1600 50  0001 C CNN
+	1    2350 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 1750
+$Comp
+L Device:R R?
+U 1 1 600CFD47
+P 2350 3300
+AR Path="/600CFD47" Ref="R?"  Part="1" 
+AR Path="/5FCF741F/600CFD47" Ref="R?"  Part="1" 
+F 0 "R?" H 2420 3346 50  0000 L CNN
+F 1 "270" H 2420 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 3300 50  0001 C CNN
+F 3 "~" H 2350 3300 50  0001 C CNN
+	1    2350 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 3150
+Wire Wire Line
+	2350 1450 2925 1450
+Wire Wire Line
+	2925 1450 2925 1550
+Wire Wire Line
+	2350 3450 2925 3450
+Wire Wire Line
+	2925 3450 2925 3350
+Wire Wire Line
+	2925 2450 3250 2450
+$Comp
+L Device:R R?
+U 1 1 600CFD53
+P 1800 1600
+AR Path="/600CFD53" Ref="R?"  Part="1" 
+AR Path="/5FCF741F/600CFD53" Ref="R?"  Part="1" 
+F 0 "R?" H 1870 1646 50  0000 L CNN
+F 1 "4.7K" H 1870 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1730 1600 50  0001 C CNN
+F 3 "~" H 1800 1600 50  0001 C CNN
+	1    1800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1450 1800 1450
+Connection ~ 2350 1450
+Wire Wire Line
+	1800 1950 1800 1750
+Connection ~ 1800 1950
+$Comp
+L Device:R R?
+U 1 1 600CFD5D
+P 1800 3300
+AR Path="/600CFD5D" Ref="R?"  Part="1" 
+AR Path="/5FCF741F/600CFD5D" Ref="R?"  Part="1" 
+F 0 "R?" H 1870 3346 50  0000 L CNN
+F 1 "4.7K" H 1870 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1730 3300 50  0001 C CNN
+F 3 "~" H 1800 3300 50  0001 C CNN
+	1    1800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3450 1800 3450
+Connection ~ 2350 3450
+Wire Wire Line
+	1800 2950 1800 3150
+Connection ~ 1800 2950
+Wire Wire Line
+	1800 2450 1550 2450
+Wire Wire Line
+	1550 3450 1800 3450
+Connection ~ 1800 3450
+Wire Wire Line
+	1550 1450 1800 1450
+Connection ~ 1800 1450
+Text HLabel 1550 2450 0    50   Input ~ 0
+IN
+Text HLabel 3250 2450 2    50   Output ~ 0
+OUT
+Text GLabel 1550 1450 0    50   Input ~ 0
++V
+Text GLabel 1550 3450 0    50   Input ~ 0
+-V
+$Comp
+L Transistor_BJT:BD139 Q?
+U 1 1 600CFD70
+P 5250 1925
+AR Path="/600CFD70" Ref="Q?"  Part="1" 
+AR Path="/5FCF741F/600CFD70" Ref="Q?"  Part="1" 
+F 0 "Q?" H 5442 1971 50  0000 L CNN
+F 1 "BD139" H 5442 1880 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 5450 1850 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf" H 5250 1925 50  0001 L CNN
+	1    5250 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BD140 Q?
+U 1 1 600CFD76
+P 5250 2925
+AR Path="/600CFD76" Ref="Q?"  Part="1" 
+AR Path="/5FCF741F/600CFD76" Ref="Q?"  Part="1" 
+F 0 "Q?" H 5442 2879 50  0000 L CNN
+F 1 "BD140" H 5442 2970 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 5450 2850 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf" H 5250 2925 50  0001 L CNN
+	1    5250 2925
+	1    0    0    1   
+$EndComp
+$Comp
+L Diode:LL4148 D?
+U 1 1 600CFD7C
+P 4925 2275
+AR Path="/600CFD7C" Ref="D?"  Part="1" 
+AR Path="/5FCF741F/600CFD7C" Ref="D?"  Part="1" 
+F 0 "D?" V 4971 2195 50  0000 R CNN
+F 1 "LL4148" V 4880 2195 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4925 2100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 4925 2275 50  0001 C CNN
+	1    4925 2275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:LL4148 D?
+U 1 1 600CFD82
+P 4925 2575
+AR Path="/600CFD82" Ref="D?"  Part="1" 
+AR Path="/5FCF741F/600CFD82" Ref="D?"  Part="1" 
+F 0 "D?" V 4971 2495 50  0000 R CNN
+F 1 "LL4148" V 4880 2495 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4925 2400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 4925 2575 50  0001 C CNN
+	1    4925 2575
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 2425 5675 2425
+$Comp
+L Device:R R?
+U 1 1 600CFD89
+P 4925 1775
+AR Path="/600CFD89" Ref="R?"  Part="1" 
+AR Path="/5FCF741F/600CFD89" Ref="R?"  Part="1" 
+F 0 "R?" H 4995 1821 50  0000 L CNN
+F 1 "4.7K" H 4995 1730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4855 1775 50  0001 C CNN
+F 3 "~" H 4925 1775 50  0001 C CNN
+	1    4925 1775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 2125 4925 1925
+$Comp
+L Device:R R?
+U 1 1 600CFD90
+P 4925 3075
+AR Path="/600CFD90" Ref="R?"  Part="1" 
+AR Path="/5FCF741F/600CFD90" Ref="R?"  Part="1" 
+F 0 "R?" H 4995 3121 50  0000 L CNN
+F 1 "4.7K" H 4995 3030 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4855 3075 50  0001 C CNN
+F 3 "~" H 4925 3075 50  0001 C CNN
+	1    4925 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 2725 4925 2925
+Wire Wire Line
+	4675 3225 4925 3225
+Wire Wire Line
+	4675 1625 4925 1625
+Text HLabel 4350 2425 0    50   Input ~ 0
+IN
+Text HLabel 5675 2425 2    50   Output ~ 0
+OUT
+Text GLabel 4675 1625 0    50   Input ~ 0
++V
+Text GLabel 4675 3225 0    50   Input ~ 0
+-V
+Wire Wire Line
+	5350 1625 5350 1725
+$Comp
+L Device:R R?
+U 1 1 600CFD9E
+P 2925 2300
+F 0 "R?" H 2995 2346 50  0000 L CNN
+F 1 "1" H 2995 2255 50  0000 L CNN
+F 2 "" V 2855 2300 50  0001 C CNN
+F 3 "~" H 2925 2300 50  0001 C CNN
+	1    2925 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2925 2150
+$Comp
+L Device:R R?
+U 1 1 600CFDA5
+P 2925 2600
+F 0 "R?" H 2995 2646 50  0000 L CNN
+F 1 "1" H 2995 2555 50  0000 L CNN
+F 2 "" V 2855 2600 50  0001 C CNN
+F 3 "~" H 2925 2600 50  0001 C CNN
+	1    2925 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2925 2450
+Connection ~ 2925 2750
+Wire Wire Line
+	2925 2950 2925 2750
+Wire Wire Line
+	1800 2650 1800 2450
+Connection ~ 1800 2450
+Wire Wire Line
+	1800 2250 1800 2450
+$Comp
+L Device:R R?
+U 1 1 600CFDB1
+P 5350 2275
+F 0 "R?" H 5420 2321 50  0000 L CNN
+F 1 "1" H 5420 2230 50  0000 L CNN
+F 2 "" V 5280 2275 50  0001 C CNN
+F 3 "~" H 5350 2275 50  0001 C CNN
+	1    5350 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 1625 5350 1625
+Connection ~ 4925 1625
+$Comp
+L Device:R R?
+U 1 1 600CFDB9
+P 5350 2575
+F 0 "R?" H 5420 2621 50  0000 L CNN
+F 1 "1" H 5420 2530 50  0000 L CNN
+F 2 "" V 5280 2575 50  0001 C CNN
+F 3 "~" H 5350 2575 50  0001 C CNN
+	1    5350 2575
+	1    0    0    -1  
+$EndComp
+Connection ~ 5350 2425
+Wire Wire Line
+	5050 2925 4925 2925
+Connection ~ 4925 2925
+Wire Wire Line
+	5350 3125 5350 3225
+Wire Wire Line
+	5350 3225 4925 3225
+Connection ~ 4925 3225
+Wire Wire Line
+	5050 1925 4925 1925
+Connection ~ 4925 1925
+$Comp
+L Device:C_Polarized C?
+U 1 1 600CFDC7
+P 4625 2425
+F 0 "C?" V 4370 2425 50  0000 C CNN
+F 1 "1uF" V 4461 2425 50  0000 C CNN
+F 2 "" H 4663 2275 50  0001 C CNN
+F 3 "~" H 4625 2425 50  0001 C CNN
+	1    4625 2425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4775 2425 4925 2425
+Connection ~ 4925 2425
+Wire Wire Line
+	4350 2425 4475 2425
+$EndSCHEMATC

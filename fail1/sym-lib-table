@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name discrete_transistor_class_ab_amplifier-rescue)(type Legacy)(uri ${KIPRJMOD}/discrete_transistor_class_ab_amplifier-rescue.lib)(options "")(descr ""))
+)
